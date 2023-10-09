@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>파일 다운로드</title>
+</head>
+<body>
+<ul>
+  <li th:each="file : ${fileList}">
+    <a th:href="@{'/download/' + ${file}}">[[${file}]] 파일 다운로드</a><br>
+  </li>
+</ul>
+</body>
+</html>
